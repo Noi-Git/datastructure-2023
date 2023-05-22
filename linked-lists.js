@@ -33,7 +33,7 @@ class LinkedList {
   print() {
     let str = ''
     let current = this.head
-    while (current.next !== null) {
+    while (current !== null) {
       str += current.val + ' --> '
       current = current.next
     }
@@ -46,5 +46,5 @@ const list = new LinkedList()
 list.append('a')
 list.append('b')
 list.append('c')
-console.log(list.head)
+// console.log(list.head)
 list.print()
