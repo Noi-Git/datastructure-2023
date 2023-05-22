@@ -15,6 +15,12 @@ class LinkedList {
   }
 
   // add Node
+  append(val) {
+    if (this.head === null) {
+      this.head = new Node(val) //create a new node and asigned it to be a new head
+      return
+    }
+  }
 }
 
 const list = new LinkedList()
