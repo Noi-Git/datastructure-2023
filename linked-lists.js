@@ -14,5 +14,5 @@ class LinkedList {
     this.head = null
   }
 
-  // add Node -- add new node to the end of the linked list
+  // add Node
 }
