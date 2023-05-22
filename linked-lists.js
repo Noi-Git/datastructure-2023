@@ -22,12 +22,12 @@ class LinkedList {
       return
     }
 
-    let curr = this.head
-    while (current.nex !== null) {
+    let current = this.head
+    while (current.next !== null) {
       //keep looping until you hit the tail
-      curr = curr.next //set current to its next -- now we find tail
+      current = current.next //set current to its next -- now we find tail
     }
-    curr.next = new Node(val) //add new node after find the tail
+    current.next = new Node(val) //add new node after find the tail
   }
 }
 
