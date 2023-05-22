@@ -16,3 +16,8 @@ class LinkedList {
 
   // add Node
 }
+
+const list = new LinkedList()
+
+list.append('a')
+list.append('b')
