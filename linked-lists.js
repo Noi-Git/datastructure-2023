@@ -29,9 +29,22 @@ class LinkedList {
     }
     current.next = new Node(val) //add new node after find the tail
   }
+
+  print() {
+    let str = ''
+    let current = this.head
+    while (current.next !== null) {
+      str += current.val + ' --> '
+      current = current.next
+    }
+    console.log(str)
+  }
 }
 
 const list = new LinkedList()
 
 list.append('a')
 list.append('b')
+list.append('c')
+console.log(list.head)
+list.print()
