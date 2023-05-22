@@ -30,6 +30,17 @@ class LinkedList {
     current.next = new Node(val) //add new node after find the tail
   }
 
+  contains(target) {
+    let current = this.head
+    while (current !== null) {
+      if (current.val === target) {
+        return true
+      }
+      current = current.next
+    }
+    return false
+  }
+
   print() {
     let str = ''
     let current = this.head
