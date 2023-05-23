@@ -52,22 +52,34 @@ class LinkedList {
   }
 }
 
-// == another way to implement print
-const printLinkedList = (head) => {
-  let current = head
-  while (current !== null) {
-    console.log(current.value)
-    current = current.next
-  }
+/* == another way to implement print
+// const printLinkedList = (head) => {
+//   let current = head
+//   while (current !== null) {
+//     console.log(current.value)
+//     current = current.next
+//   }
+// }
+
+*/
+
+/* write print recursively == not working
+const printLinkedListRecursive = (head) => {
+  if (head === null) return
+  console.log(head.val)
+  printLinkedListRecursive(head.next)
 }
+*/
 
 const list = new LinkedList()
 
 list.append('a')
 list.append('b')
 list.append('c')
-// console.log(list.head)
-list.print()
+// // console.log(list.head)
+// list.print()
 
-console.log(list.contains('b'))
-console.log(list.contains('e'))
+// console.log(list.contains('b'))
+// console.log(list.contains('e'))
+
+// printLinkedListRecursive(a) // not working
